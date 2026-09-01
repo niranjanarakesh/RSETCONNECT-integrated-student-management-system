@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <linearGradient id="clothGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="50%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background Circle -->
+  <rect width="200" height="200" fill="url(#bgGrad)" rx="100"/>
+  
+  <!-- Subtle Outer Ring -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+
+  <!-- Student Body / Shoulders with Uniform / Collar -->
+  <g filter="url(#shadow)">
+    <!-- Base Coat/Shoulder Silhouette -->
+    <path d="M 32 196 C 35 152, 60 130, 100 130 C 140 130, 165 152, 168 196 Z" fill="url(#clothGrad)"/>
+    
+    <!-- Inner Shirt / Collar White V-neck -->
+    <polygon points="100,158 82,130 118,130" fill="#ffffff"/>
+    <!-- Tie / Academic Badge in Gold -->
+    <polygon points="100,166 94,142 106,142" fill="url(#goldGrad)"/>
+  </g>
+
+  <!-- Student Neck -->
+  <rect x="88" y="112" width="24" height="26" rx="4" fill="url(#bodyGrad)"/>
+
+  <!-- Student Head -->
+  <g filter="url(#shadow)">
+    <ellipse cx="100" cy="85" rx="34" ry="40" fill="url(#bodyGrad)"/>
+  </g>
+
+  <!-- Academic Graduation Cap / Scholar Icon Overlay -->
+  <g filter="url(#shadow)">
+    <!-- Mortarboard Cap Diamond Top -->
+    <polygon points="100,28 152,48 100,68 48,48" fill="#0f172a" stroke="#ffffff" stroke-width="1.5"/>
+    <!-- Cap Skull Base -->
+    <path d="M 68 56 Q 100 74 132 56 L 132 66 Q 100 84 68 66 Z" fill="#0f172a"/>
+    <!-- Gold Cap Button -->
+    <circle cx="100" cy="48" r="3.5" fill="url(#goldGrad)"/>
+    <!-- Tassel String & Pendant -->
+    <path d="M 100 48 Q 138 52 144 76" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="144" cy="78" r="4" fill="url(#goldGrad)"/>
+  </g>
+</svg>

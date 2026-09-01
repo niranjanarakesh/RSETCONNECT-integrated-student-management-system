@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix  RSMS Connect1",
+  "description": "A modern, student-focused Student Management System for college students and faculty with attendance tracking, marks, activity points, feedback, timetable, bus tracking, and hall tickets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
